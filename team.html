@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Team</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Sample page styled with Bulma CSS using Bulma LIVE editor."
+    />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="AppSeed" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      href="https://appsrv1-147a1.kxcdn.com/bulma-css-starter/media/favicon.png"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section class="hero is-info is-fullheight">
+      <div class="hero-head">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://www.ulbi.ac.id/">
+                <img src="./images/ULBI.png" alt="Logo" />
+              </a>
+              <a
+                role="button"
+                class="navbar-burger burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navbarMenu"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+              <div class="navbar-end">
+                <a href="./index.html" class="navbar-item"> Home </a>
+                <a href="./team.html" class="navbar-item"> Team </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- text -->
+
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="column is-6 is-offset-3">
+            <p class="thick">WGT</p>
+            <h1 class="title">WeGoTour</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team cards -->
+      <div class="columns is-centered mt-5 mb-5">
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="./images/male.png"
+                  alt="Placeholder image"
+                  class="modal-button"
+                  data-target="modal-image2"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h1 class="title is-4 has-text-centered">User Information</h1>
+                <ul>
+                  <li><strong>Nama:</strong> <span id="nama-daffa"></span></li>
+                  <li>
+                    <strong>Kelas:</strong> <span id="kelas-daffa"></span>
+                  </li>
+                  <li><strong>NPM:</strong> <span id="npm-daffa"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="./images/female.jpg"
+                  alt="Placeholder image"
+                  class="modal-button"
+                  data-target="modal-image2"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h1 class="title is-4 has-text-centered">User Information</h1>
+                <ul>
+                  <li><strong>Nama:</strong> <span id="nama-prisya"></span></li>
+                  <li>
+                    <strong>Kelas:</strong> <span id="kelas-prisya"></span>
+                  </li>
+                  <li><strong>NPM:</strong> <span id="npm-prisya"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <script type="module" src="./js/team.js"></script>
+    <script type="module" src="./js/bulma.js"></script>
+  </body>
+</html>
