@@ -7,7 +7,7 @@ export default function PostSignUp() {
     "https://asia-southeast2-fahad-402509.cloudfunctions.net/gcfproyekdp";
   let tokenkey = "token";
   let tokenvalue =
-    "719af54ce9b1fe49ce67e44600dcc7a496be9b5fc243e1e26a2fd36fb355c0490cdc615519e70986f9821233fabe8e91ba3cc36486242a19801581d7c83fda5e";
+    "56d8745202edebd463b054fdcf224fc552606b36f5b89e36b501ccdd890d902075127f0784fe57e03700c6a1ba46bcf304d912e77f87cc559835503e603a4347";
   let datainjson = {
     username: getValue("username"),
     password: getValue("password"),
