@@ -11,7 +11,7 @@ export default function PostSignUp() {
   let datainjson = {
     username: getValue("username"),
     password: getValue("password"),
-  };
+  }
 
   postWithToken(target_url, tokenkey, tokenvalue, datainjson, responseData);
 }
