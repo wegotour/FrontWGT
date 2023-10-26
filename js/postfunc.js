@@ -4,10 +4,10 @@ import { setCookieWithExpireHour } from "https://jscroot.github.io/cookie/croot.
 
 export default function PostSignUp() {
   let target_url =
-    "https://us-central1-fahad-402509.cloudfunctions.net/gcf1214015";
+    "https://asia-southeast2-fahad-402509.cloudfunctions.net/gcfproyekdp";
   let tokenkey = "token";
   let tokenvalue =
-    "f54f4d0a47b0508a70a76ca2111a475226419ea28ff2cb35b5e05add6688da5f0f37c774331dbb57b2fc6d838847d4cb108b1af250162cd28767530a61622b1c";
+    "719af54ce9b1fe49ce67e44600dcc7a496be9b5fc243e1e26a2fd36fb355c0490cdc615519e70986f9821233fabe8e91ba3cc36486242a19801581d7c83fda5e";
   let datainjson = {
     username: getValue("username"),
     password: getValue("password"),
