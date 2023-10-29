@@ -24,6 +24,20 @@
       crossorigin="anonymous"
     />
     <!-- <link rel="stylesheet" href="./css/login.css" /> -->
+      <script>
+    function checkPageExists() {
+        var requestedPage = location.pathname; 
+        var validPages = ["/", "login", "/login" , "/login.html" , "login.html"]; 
+
+        if (!validPages.includes(requestedPage)) {
+          
+            window.location.href = '/404.html';
+        }
+    }
+
+    window.addEventListener('load', checkPageExists);
+</script>
+
   </head>
   <body>
     <div id="app">
@@ -76,6 +90,11 @@
             </div>
           </div>
         </div>
+
+        <div class="container">
+            <div class="notification is-white" id="pesan"></div>
+           </div>
+
       </section>
     </div>
 
