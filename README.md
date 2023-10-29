@@ -1,1 +1,1 @@
-# FrontWGT
+# WeGoTour genks
