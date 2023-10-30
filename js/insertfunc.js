@@ -3,9 +3,9 @@ import {setInner,getValue} from "https://jscroot.github.io/element/croot.js";
 import {setCookieWithExpireHour} from "https://jscroot.github.io/cookie/croot.js";
 
 export default function PostSignUp(){
-    let target_url = "https://asia-southeast2-rock-prism-401900.cloudfunctions.net/warmindo-insertuser";
+    let target_url = "https://asia-southeast2-fahad-402509.cloudfunctions.net/wegotour-insertuser";
     let tokenkey = "token";
-    let tokenvalue = "40e27523381e236813ece16a5e420192592d2ed80cd74eafe115afbaebe874d2"; 
+    let tokenvalue = "75127f0784fe57e03700c6a1ba46bcf304d912e77f87cc559835503e603a4347"; 
     let datainjson = {
         "username": getValue("username"),
         "password": getValue("password"),
