@@ -4,10 +4,10 @@ import { setCookieWithExpireHour } from "https://jscroot.github.io/cookie/croot.
 
 export default function PostSignUp() {
   let target_url =
-    "https://asia-southeast2-wegotour-403712.cloudfunctions.net/loginwegotour";
+    "https://asia-southeast2-fahad-402509.cloudfunctions.net/gcfproyekdp";
   let tokenkey = "token";
   let tokenvalue =
-    "75127f0784fe57e03700c6a1ba46bcf304d912e77f87cc559835503e603a4347";
+    "34984c89d5553bd07ced0b9ed6306cc010418a1758fae39e92bfce521ee7b44e";
   let datainjson = {
     username: getValue("username"),
     password: getValue("password"),
