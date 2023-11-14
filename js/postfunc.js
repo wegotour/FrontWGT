@@ -4,7 +4,7 @@ import { setCookieWithExpireHour } from "https://jscroot.github.io/cookie/croot.
 
 export default function PostSignUp() {
   let target_url =
-    "https://asia-southeast2-fahad-402509.cloudfunctions.net/gcfproyekdp";
+    "https://asia-southeast2-wegotour-403712.cloudfunctions.net/wegotourlogin";
   let tokenkey = "token";
   let tokenvalue =
     "34984c89d5553bd07ced0b9ed6306cc010418a1758fae39e92bfce521ee7b44e";
@@ -21,7 +21,7 @@ function responseData(result) {
 
   if (result.message === "Selamat Datang") {
     // Jika pesan adalah "Selamat Datang", arahkan ke halaman dashboard.
-    window.location.href = "dashboard.html"; // Gantilah "error.html" dengan halaman error yang sesuai.
+    window.location.href = "dashboarduser.html"; // Gantilah "error.html" dengan halaman error yang sesuai.
   } else if (result.message === "Password Salah") {
     // Jika pesan kesalahan adalah "Password salah", arahkan ke halaman error.
     window.location.href = "404.html";
