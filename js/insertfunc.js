@@ -9,7 +9,6 @@ export default function PostSignUp(){
     let datainjson = {
         "username": getValue("username"),
         "password": getValue("password"),
-        "role": getValue("role")
     }
 
     postWithToken(target_url,tokenkey,tokenvalue,datainjson,responseData);
@@ -21,7 +20,7 @@ function responseData(result) {
     
     if (result.message === "Selamat Datang") {
         // Jika pesan adalah "Selamat Datang", arahkan ke halaman dashboard.
-        window.location.href = "dashboard.html"; // Gantilah "error.html" dengan halaman error yang sesuai.
+        window.location.href = "dashboarduser.html"; // Gantilah "error.html" dengan halaman error yang sesuai.
     } else if (result.message === "Password Salah") {
         // Jika pesan kesalahan adalah "Password salah", arahkan ke halaman error.
         window.location.href = "404.html";
