@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Login Admin</title>
+    <title>Reset Pass</title>
     <link rel="shortcut icon" href="./images/wegotour.png" type="image/x-icon">
     <link
       rel="stylesheet"
@@ -46,9 +46,9 @@
         <div class="hero-body">
           <div class="container has-text-centered">
             <div class="column is-4 is-offset-4">
-              <h3 class="title has-text-grey">Login dulu ngabs</h3>
+              <h3 class="title has-text-grey">Silahkan</h3>
               <br>
-              <p class="subtitle has-text-grey">Mohon login untuk melanjutkan ke halaman utama.</p>
+              <p class="subtitle has-text-grey">Masukkan Password Terakhir Anda Untuk Merubah.</p>
               <form id="formlogin">
               <div class="box">
                   <div class="field">
@@ -59,7 +59,7 @@
                         placeholder="username"
                         autocomplete="username"
                         id="username"
-                        value="prisyahaura"
+                        value=""
                         required
                         autofocus
                       />
@@ -71,10 +71,10 @@
                       <input
                         class="input"
                         type="password"
-                        placeholder="******"
+                        placeholder="password"
                         autocomplete="current-password"
                         id="password"
-                        value="picaw"
+                        value=""
                         required
                       />
                     </div>
@@ -85,11 +85,10 @@
                   <button class="button is-block is-link is-fullwidth is-medium" type="submit" id="button">
                     Login
                   </button>
-                    <br>
-                    <p class="text-sm leading-relaxed text-grey-900">Kembali Ke Halaman Login User Jika Anda bukan Admin <br> <a href="index.html" class="font-bold text-grey-700">Login User</a></p>
+
                 </form>
               </div>
-
+              <p class="text-sm leading-relaxed text-grey-900">Kembali ke halaman login <br> <a href="index.html" class="font-bold text-grey-700">Login</a></p>
             </div>
           </div>
         </div>
@@ -101,6 +100,6 @@
       </section>
     </div>
             <!-- Scripts -->
-            <script type="module" src="https://cdn.jsdelivr.net/gh/wegotour/js_wgt@0.0.9/jsadmin/controller/controllerLogin.js"></script>
+            <script type="module" src="https://cdn.jsdelivr.net/gh/wegotour/js_wgt@0.0.9/js/controller/controllerChangePass.js"></script>
   </body>
 </html>
