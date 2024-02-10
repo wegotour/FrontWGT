@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Pembayaran</title>
+    <!-- Add your stylesheets and other head elements here -->
+    <link rel="stylesheet" href="css/styleb.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/stylelogin.css">
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+</head>
+<body>
+<div id="loader-wrapper">
+		<div id="loaderz"></div>
+		<div id="loading-text"></div>
+</div>
+<section class="section causes">
+    <div class="container">
+        <div class="columns is-justify-content-center">
+            <div class="column is-7-desktop is-8-tablet">
+                <div class="section-title has-text-centered">
+                    <span class="title">Buat Data Pembayaran</span>
+                    <!-- Add any other checkout-related title or information here -->
+                </div>
+            </div>
+        </div>
+        <!-- Checkout Form -->
+        <form id="checkoutForm" method="post">
+            <!-- Display ticket information -->
+            <div class="columns is-multiline is-justify-content-center">
+                <div class="column is-4-desktop is-6-tablet">
+                    <div class="cause-item">
+                        <div class="card-body">
+                            <h3 class="title">Rincian Pemesanan</h3>
+                            <label for="ticketName">Nama Produk:</label>
+                            <input class="input is-small" type="text" id="ticketName" name="ticketName" readonly>
+
+                            <label for="ticketPrice">Harga:</label>
+                            <input class="input is-small" type="text" id="ticketPrice" name="ticketPrice" readonly>
+
+                            <label for="ticketQuantity">Quantity:</label>
+                            <input class="input is-small" type="text" id="ticketQuantity" name="ticketQuantity" readonly>
+
+                            <label for="ticketTotal">Total:</label>
+                            <input class="input is-small" type="text" id="ticketTotal" name="ticketTotal" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Form inputs for additional checkout details -->
+            <div class="columns is-multiline is-justify-content-center">
+                <div class="column is-4-desktop is-6-tablet">
+                    <div class="cause-item">
+                        <div class="card-body">
+                            <h3 class="title">Informasi Pembeli</h3>
+                            <label for="label">Nama :</label>
+                            <input class="input is-small" id="namapembeli" type="text" required name="customerName">
+
+                            <label for="customerEmail">Email :</label>
+                            <input class="input is-small" type="email" id="email" name="customerEmail" required>
+
+                            <label for="customerAddress">Alamat :</label>
+                            <textarea class="textarea" id="alamat" name="customerAddress" rows="4" required></textarea>
+
+                            <label for="customerEmail">No Hp :</label>
+                            <input class="input is-small" type="text" id="nohp" name="customerEmail" required>
+                            <hr>
+                            <button type="submit" id="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/gh/wegotour/js_wgt@0.0.36/jsticket/cobajs1.js" type="module"></script>
+<script src="https://cdn.jsdelivr.net/gh/wegotour/js_wgt@0.0.36/jsticket/cobajs2.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/wegotour/js_wgt@0.0.36/jsticket/cobajs3.js" type="module"></script>
+<script src="https://cdn.jsdelivr.net/gh/wegotour/js_wgt@0.0.36/jsticket/cobajs4.js" type="module"></script>
+<script src="https://cdn.jsdelivr.net/gh/wegotour/js_wgt@0.0.36/jsticket/cobajstransaksi.js" type="module"></script>
+
+</body>
+</html>

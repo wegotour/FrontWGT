@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .destination {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .destination h2 {
+    color: #333;
+  }
+  
+  .destination-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .info-card {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .info-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .info-card h3 {
+    color: #333;
+  }
+  
+  .info-card p {
+    color: #666;
+  }
+  
