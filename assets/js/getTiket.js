@@ -86,15 +86,15 @@ export function responseData(results) {
 }
 let staticNumber = 1;
 export function isiRow(value) {
-  const content = tableTicket
+    const content = tableTicket
     .replace("#_ID#", staticNumber++)
     .replace("#NAMATICKET#", value.namaticket)
     .replace("#HARGA#", value.harga)
     .replace("#ALAMAT#", value.alamat)
     .replace("#NOHP#", value.nohp)
     .replace("#QUANTITY#", value.quantity)
-    .replace("#TOTAL#", value.total);
-    .replace("#NAMAPEMBELI#", value.namapembeli);
+    .replace("#TOTAL#", value.total)
+    .replace("#NAMAPEMBELI#", value.namapembeli)
     .replace("#EMAIL#", value.email);
-  addInner("tableTicket", content);
+    addInner("tableTicket", content);
 }
