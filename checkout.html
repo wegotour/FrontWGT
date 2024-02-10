@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buat Pembayaran</title>
+    <link rel="shortcut icon" href="wegotour.png">
+    <title>Pemesanan</title>
     <!-- Add your stylesheets and other head elements here -->
-    <link rel="stylesheet" href="css/styleb.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/styleupass.css">
+    <link rel="stylesheet" href="./wegotour/css/landing.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="css/stylelogin.css">
 
     <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
 </head>
 <body>
+
 <div id="loader-wrapper">
 		<div id="loaderz"></div>
 		<div id="loading-text"></div>
 </div>
-<section class="section causes">
+
+<section class="hero is-info">
     <div class="container">
         <div class="columns is-justify-content-center">
             <div class="column is-7-desktop is-8-tablet">
                 <div class="section-title has-text-centered">
-                    <span class="title">Buat Data Pembayaran</span>
+                    <span class="title">Data Pemesanan</span>
                     <!-- Add any other checkout-related title or information here -->
                 </div>
             </div>
@@ -68,7 +73,13 @@
                             <label for="customerEmail">No Hp :</label>
                             <input class="input is-small" type="text" id="nohp" name="customerEmail" required>
                             <hr>
-                            <button type="submit" id="submit">Submit</button>
+
+                            <div class="col-12">
+                                <div class="d-grid my-3">
+                                  <button class="btn btn-primary btn-lg" type="submit" id="submit" >Submit</button>
+                                </div>
+                              </div>
+
                         </div>
                     </div>
                 </div>
